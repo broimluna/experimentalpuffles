@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="assets/css/style.css">
+        <script src="assets/js/tabs.js"></script>
+        <script src="assets/js/script.js"></script>
+        <script type="module" src="game/main.js"></script>
+        <script src="https://github.com/phaserjs/phaser/releases/download/v4.0.0-rc.5/phaser.js"></script>
+        <script src="https://cdn.socket.io/4.7.2/socket.io.min.js" integrity="" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/gifuct-js@2.0.0/dist/gifuct.min.js"></script>
+        <title>Experimental Puffles</title>   
+    </head>
+
+    <body onload="startTime();loadBlogList();">
+        <container>
+
+            <div id="sidebar">
+                <div class="sidelogo" onclick="openTab('hometab')">
+                    <img src="assets/img/logo.png">
+                    <h3>Experimental Puffles</h3>
+                </div>
+                <button class="hometabhbutton active" onclick="openTab('hometab')">Home</button>
+                <!--<br>-->
+                <!--<button class="playtabhbutton" onclick="openTab('playtab')">Play!</button>-->
+                <br>
+                <button class="abouttabhbutton" onclick="openTab('abouttab')">About</button>
+            </div>
+
+            <div id="main">
+                <div class="tab active" id="hometab">
+                    <h1 class="title">Home</h1>
+                    <p>
+                    Welcome to Experimental Puffles, we're launching October 5th!
+                    <br>
+                    Experimental Puffles is an experimental (it's in the name!) project with a goal to create a virtual world similar to Club Penguin.
+                    <br>
+                    This is very early development, and the game may be buggy/lacking in feature, I'm aware of it.
+                    <br>
+                    I'm working to bring more content to every Puffle soon!
+                    </p>
+                </div>
+
+                <div class="tab" id="playtab">
+                    <h1 class="title">Play!</h1>
+                    <div id="game-container" style="text-align: center;"></div>
+                </div>
+
+
+
+                <div class="tab" id="abouttab">
+                    <h1 class="title">About</h1>
+                    <p>Experimental Puffles is a virtual world in development meant to be a "spiritual successor" to Club Penguin.<br>I am a small developer with an idea, and seeing the state of our online games nowadays, it's all about guns, or there's "weird" people.<br>Well not on here! This place is a safe place for everyone, including kids!<br>Talk, play, wander, Experimental Puffles is the latest place to explore!</p>
+                </div>
+
+            </div>
+        </container>
+        <!--<loading>
+        <center>
+        <img class="loadlogo" src="assets/img/logo.png">
+        </center>
+    </loading>-->
+    </body>
+</html>
